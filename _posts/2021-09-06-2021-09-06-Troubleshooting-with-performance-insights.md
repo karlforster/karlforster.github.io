@@ -1,10 +1,7 @@
 ---
 published: true
 ---
----
-categories: RDS
 
----
 One of the most common problems with most web applications is that performance of the application is impacted by the RDS database instance in the background. One of the most common problems is that a database query is not optomised correctly and take longer to process the results than anticipated.
 
 Long running queries can cause problems with high CPU usage and memory ussage, can also cause your RDS instance to exceed its designated IOPS capacity that was selected when creating the RDS instance. 
