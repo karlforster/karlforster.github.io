@@ -19,7 +19,7 @@ As of September 2021 the following database RDS versions are supported on the be
 
 
 This is subject to change frequently so best to check the below url 
-![RDS Supported Versions]({{site.baseurl}}/_posts/RDS_Supported_versions.png)
+![RDS Supported Versions]({{site.baseurl}}/images/RDS_Supported_versions.png)
 
 Step 1 - Enabling enhanced monitoring
 
@@ -29,7 +29,7 @@ Choose your database
 select Modify
 
 Under Additional configuration section of the database configuration, you will find an 
-![Enhanced Monitoring]({{site.baseurl}}/_posts/enhanced-monitoring.png)
+![Enhanced Monitoring]({{site.baseurl}}/images/enhanced-monitoring.png)
 
 Choose a Granularity level for AWS to watch your database queries
 Choose a IAM monitoring role to use for accessing to your RDS instance. 
@@ -44,7 +44,7 @@ Choose your database
 select Modify
 
 Under Additional configuration section of the database configuration, you will find an 
-![Enable performance insights]({{site.baseurl}}/_posts/performance-insights-enable.png)
+![Enable performance insights]({{site.baseurl}}/images/performance-insights-enable.png)
 
 Choose a retention period for your performance insight data. 
 In my opinion it is best to set this to 7 days as this doesnt cause any extra cost to your aws environment as it is included under the free tier.
@@ -58,12 +58,12 @@ Click: Modify DB Instance
 Once the above steps have been completed, you then navigate to RDS console > Performance insights dashboard.
 choose the DB Instance you enabled for Performance insights.
 You will see your database has a new dashboard available
-![Performance insights dashboard]({{site.baseurl}}/_posts/performance-insights-dash.png)
+![Performance insights dashboard]({{site.baseurl}}/images/performance-insights-dash.png)
 
 Which shows the top database load and vCPU statistics
 
 Scrolling down you can see the top SQL commands being run with the calls/sec & rows/sec counters to help troubleshoot bottlenecks.
-![Top SQL]({{site.baseurl}}/_posts/perf_insights_top_sql.png)
+![Top SQL]({{site.baseurl}}/images/perf_insights_top_sql.png)
 
 
 Hopefully this will help you get the more out of AWS RDS console and get to the bottom of problems quicker in the platform.
