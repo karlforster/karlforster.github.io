@@ -2,9 +2,6 @@
 published: true
 ---
 ---
-layout: post
-title:  "Troubleshooting RDS performance with AWS Performance Insights"
-date:   2021-09-06 19:00:00 +0100
 categories: RDS
 
 ---
